@@ -1,0 +1,41 @@
+{
+	"name": "gtlds",
+	"version": "1.0.0",
+	"description": "A list of all gGTLD names from the ICANN registry.",
+	"license": "MIT",
+	"repository": "chrisvogt/gtlds",
+	"author": {
+		"name": "Chris Vogt",
+		"email": "mail@chrisvogt.me",
+		"url": "https://www.chrisvogt.me"
+	},
+	"engines": {
+		"node": ">=6"
+	},
+	"scripts": {
+		"sync": "node ./sync",
+		"test": "xo && ava --verbose"
+	},
+	"files": [
+		"index.js",
+		"sync.js"
+	],
+	"keywords": [
+		"tld",
+		"website",
+    "ICANN",
+    "domain",
+    "gtld"
+	],
+	"dependencies": {
+		"unique-random-array": "^1.0.1"
+	},
+	"devDependencies": {
+		"ava": "^0.25.0",
+		"got": "^9.2.2",
+		"xo": "^0.23.0"
+	},
+	"xo": {
+		"space": true
+	}
+}
