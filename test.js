@@ -17,19 +17,6 @@ test('it returns an array of names from the collection', t => {
   t.deepEqual(gtlds.names, allNames);
 });
 
-test('it gets the expected gTLD object from the collection', t => {
-  const needle = 'google';
-  const result = gtlds.get(needle);
-  const target = gtlds.all.find(({gTLD}) => gTLD === needle);
-  t.deepEqual(result, target);
-  t.deepEqual(Object.keys(result), expectedKeys);
-});
-
-test('it returns false for invalid gTLDs', t => {
-  const invalidName = '#@*$invalidNam3';
-  t.is(gtlds.isValid(invalidName), false);
-});
-
 test('it gets a random object from the collection', t => {
   const gTLD = gtlds.random();
   t.truthy(gTLD);

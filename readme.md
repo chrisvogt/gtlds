@@ -19,18 +19,6 @@ $ npm install gtlds
 ```js
 const gtlds = require('gtlds');
 
-gtlds.get('apple');
-/*
-{
-  "contractTerminated":false,
-  "gTLD":"apple",
-  "registryOperator":"Apple Inc."
-}
-*/
-
-gtlds.isValid('apple');
-/* TRUE */
-
 gtlds.random();
 /*
 {
@@ -55,20 +43,6 @@ gTLDs in alphabetical order.
 Type: `Array`
 
 gTLD names in alphabetical order.
-
-### .get(`gTLD` _string_)
-
-Type: `Function`
-
-Get data for a specific gTLD.
-
-### .isValid(`gTLD` _string_)
-
-Type: `Function`
-
-Validate a gTLD name.
-
-_NOTE: Returns `true` for terminated gTLDs._
 
 ### .random()
 
