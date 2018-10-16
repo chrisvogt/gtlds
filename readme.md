@@ -1,4 +1,4 @@
-# gtlds [![Build Status](https://travis-ci.org/chrisvogt/gtlds.svg?branch=master)](https://travis-ci.org/chrisvogt/gtlds)
+# gtlds [![Build Status](https://travis-ci.org/chrisvogt/gtlds.svg?branch=master)](https://travis-ci.org/chrisvogt/gtlds) [![codecov](https://codecov.io/gh/chrisvogt/gtlds/branch/master/graph/badge.svg)](https://codecov.io/gh/chrisvogt/gtlds)
 
 > gTLD utilities
 
