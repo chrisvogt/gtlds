@@ -1,10 +1,10 @@
 import test from 'ava';
-import gtlds from '.';
+import * as gtlds from './index.js';
 
 const expectedKeys = [
   'contractTerminated',
   'gTLD',
-  'registryOperator'
+  'registryOperator',
 ];
 
 test('it returns the full collection', t => {

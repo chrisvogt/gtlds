@@ -1,10 +1,8 @@
-'use strict';
+import {readFileSync} from 'node:fs';
+import uniqueRandomArray from 'unique-random-array';
 
-const uniqueRandomArray = require('unique-random-array');
-const collection = require('./gtlds.json');
+const collection = JSON.parse(readFileSync(new URL('gtlds.json', import.meta.url), 'utf8'));
 
-const names = collection.map(({gTLD}) => gTLD);
-
-module.exports.all = collection;
-module.exports.names = names;
-module.exports.random = uniqueRandomArray(collection);
+export const all = collection;
+export const names = collection.map(({gTLD}) => gTLD);
+export const random = uniqueRandomArray(collection);
