@@ -17,7 +17,7 @@ $ npm install gtlds
 ## Usage
 
 ```js
-const gtlds = require('gtlds');
+import gtlds from 'gtlds';
 
 gtlds.random();
 /*
@@ -28,6 +28,8 @@ gtlds.random();
 }
 */
 ```
+
+**Note:** This package is ESM-only and requires Node.js 18 or higher.
 
 
 ## API
